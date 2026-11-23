@@ -1,0 +1,1808 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Powerstar Supermarket - Annex Mwiki | Fresh Groceries, Deals &amp; Family Shopping</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for crisp retail, social, and navigation icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        emerald: {
+                            850: '#064e3b',
+                            950: '#022c22',
+                        }
+                    }
+                }
+            }
+        };
+    </script>
+    <style>
+        /* Subtle custom scrollbar hiding for clean horizontal strips */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-emerald-600 selection:text-white">
+
+    <!-- Top Executive & Multi-Platform Social Announcement Bar -->
+    <div class="bg-emerald-950 text-white text-xs py-2 px-4 border-b border-emerald-900">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2">
+                <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-extrabold bg-amber-400 text-slate-950">24+ YEARS OF VALUE</span>
+                <span class="font-medium text-emerald-100">Powerstar Annex Mwiki • Kasarani Mwiki Rd (<strong class="text-amber-300">QWG7+J62</strong>)</span>
+            </div>
+            <!-- Multi-Platform Social Links -->
+            <div class="flex items-center gap-3.5 text-emerald-200">
+                <span class="hidden md:inline text-emerald-400 font-semibold">Watch Daily Deals:</span>
+                <a href="https://www.youtube.com/results?search_query=Powerstar+Supermarket+Nairobi" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="hover:text-red-400 transition flex items-center gap-1 font-semibold">
+                    <i class="fa-brands fa-youtube text-sm text-red-400"></i><span>YouTube</span>
+                </a>
+                <a href="https://www.tiktok.com/search?q=Powerstar%20Supermarket%20Nairobi" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="hover:text-white transition flex items-center gap-1 font-semibold">
+                    <i class="fa-brands fa-tiktok text-sm text-amber-300"></i><span>TikTok</span>
+                </a>
+                <a href="https://www.instagram.com/explore/tags/powerstarsupermarket/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="hover:text-pink-400 transition">
+                    <i class="fa-brands fa-instagram text-sm"></i>
+                </a>
+                <a href="https://www.facebook.com/search/top?q=Powerstar%20Supermarket" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="hover:text-blue-400 transition">
+                    <i class="fa-brands fa-facebook text-sm"></i>
+                </a>
+                <a href="https://x.com/search?q=Powerstar%20Supermarket" target="_blank" rel="noopener noreferrer" aria-label="X Twitter" class="hover:text-white transition">
+                    <i class="fa-brands fa-x-twitter text-sm"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Navigation Header -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 sm:h-20 gap-2">
+                <!-- Brand Logo -->
+                <a href="#" class="flex items-center gap-2.5 sm:gap-3 group shrink-0">
+                    <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-gradient-to-br from-emerald-800 to-emerald-600 flex items-center justify-center text-amber-400 shadow-md group-hover:scale-105 transition">
+                        <i class="fa-solid fa-star text-xl"></i>
+                    </div>
+                    <div>
+                        <span class="block font-display text-base sm:text-xl font-extrabold tracking-tight text-emerald-950 leading-none">POWERSTAR</span>
+                        <span class="block text-[10px] sm:text-[11px] font-bold tracking-wider text-amber-600 uppercase mt-0.5">Supermarket • Annex Mwiki</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden xl:flex items-center gap-6 text-sm font-semibold text-slate-600">
+                    <a href="#offers" class="hover:text-emerald-700 transition">Weekly Offers</a>
+                    <a href="#experience" class="hover:text-emerald-700 transition">Store &amp; Amenities</a>
+                    <a href="#social-hub" class="hover:text-emerald-700 transition">Social Hub</a>
+                    <a href="#reviews" class="hover:text-emerald-700 transition">Reviews (3.8★)</a>
+                    <a href="#location" class="hover:text-emerald-700 transition">Location</a>
+                </nav>
+
+                <!-- Control Panel Action Buttons -->
+                <div class="flex items-center gap-1.5 sm:gap-2.5">
+                    <!-- Official Admin Panel Button (Protected by passkey: powerstar1) -->
+                    <button
+                        id="adminPanelBtn"
+                        type="button"
+                        onclick="handleAdminPanelClick()"
+                        class="inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs sm:text-sm transition shadow-sm border border-slate-700"
+                        title="Open Official Admin Panel (Passkey: powerstar1)"
+                    >
+                        <i id="adminLockIcon" class="fa-solid fa-shield-halved text-amber-400"></i>
+                        <span id="adminPanelBtnText">Admin Panel</span>
+                    </button>
+
+                    <!-- Message / Inquiry Modal Trigger for Customers -->
+                    <button
+                        type="button"
+                        onclick="openFeedbackModal('Store Inquiry & Message Request')"
+                        class="hidden sm:inline-flex items-center gap-1.5 px-3 py-2.5 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-950 font-bold text-xs sm:text-sm transition border border-emerald-200"
+                    >
+                        <i class="fa-solid fa-envelope-open-text text-emerald-700"></i>
+                        <span>Message</span>
+                    </button>
+
+                    <!-- Smart Cart Drawer Trigger -->
+                    <button id="openListBtn" type="button" class="relative inline-flex items-center gap-2 px-3.5 py-2.5 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs sm:text-sm transition shadow-md">
+                        <i class="fa-solid fa-cart-shopping text-amber-300"></i>
+                        <span class="hidden sm:inline">Cart</span>
+                        <span id="listBadge" class="inline-flex items-center justify-center min-w-[20px] h-5 px-1 text-xs font-extrabold rounded-full bg-amber-400 text-slate-950">0</span>
+                    </button>
+
+                    <!-- Mobile Menu Toggle -->
+                    <button id="mobileMenuBtn" type="button" aria-label="Toggle Menu" class="xl:hidden p-2.5 rounded-xl text-slate-700 hover:bg-slate-100 transition">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Navigation -->
+        <div id="mobileMenu" class="hidden xl:hidden bg-white border-t border-slate-100 px-4 pt-2 pb-5 space-y-1.5 shadow-lg">
+            <a href="#offers" onclick="closeMobileMenu()" class="block px-3 py-2.5 rounded-xl text-sm font-bold text-slate-700 hover:bg-emerald-50 hover:text-emerald-700">Weekly Offers &amp; Catalog</a>
+            <a href="#experience" onclick="closeMobileMenu()" class="block px-3 py-2.5 rounded-xl text-sm font-bold text-slate-700 hover:bg-emerald-50 hover:text-emerald-700">Store Amenities &amp; Bouncing Castle</a>
+            <a href="#social-hub" onclick="closeMobileMenu()" class="block px-3 py-2.5 rounded-xl text-sm font-bold text-slate-700 hover:bg-emerald-50 hover:text-emerald-700">YouTube, TikTok &amp; Social Deals</a>
+            <a href="#reviews" onclick="closeMobileMenu()" class="block px-3 py-2.5 rounded-xl text-sm font-bold text-slate-700 hover:bg-emerald-50 hover:text-emerald-700">Customer Reviews (3.8★)</a>
+            <a href="#location" onclick="closeMobileMenu()" class="block px-3 py-2.5 rounded-xl text-sm font-bold text-slate-700 hover:bg-emerald-50 hover:text-emerald-700">Location &amp; Sister Branches</a>
+            <button type="button" onclick="openFeedbackModal('Store Inquiry & Message Request'); closeMobileMenu();" class="w-full text-left px-3 py-2.5 rounded-xl text-sm font-bold text-emerald-900 bg-emerald-50 hover:bg-emerald-100">
+                <i class="fa-solid fa-envelope mr-1.5"></i> Send Message Request
+            </button>
+            <button type="button" onclick="handleAdminPanelClick(); closeMobileMenu();" class="w-full text-left px-3 py-2.5 rounded-xl text-sm font-extrabold text-white bg-slate-900 hover:bg-slate-800">
+                <i class="fa-solid fa-shield-halved text-amber-400 mr-1.5"></i> <span id="mobileAdminLabel">Official Admin Panel</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- CUSTOMER STOREFRONT WRAPPER (Hidden when Official Admin Panel View is active) -->
+    <div id="storefrontView">
+
+    <!-- 1. EXECUTIVE HERO WITH SHARED CELEBRATION BACKGROUND & POPULATED COVER SHOWCASE -->
+    <section id="greenHeroSection" class="relative overflow-hidden bg-gradient-to-br from-emerald-950 via-emerald-900 to-emerald-800 text-white">
+        <!-- Celebration background photo layer -->
+        <div
+            id="heroCelebrationBgLayer"
+            aria-hidden="true"
+            class="absolute inset-0 bg-cover bg-center bg-no-repeat scale-105 opacity-35 mix-blend-luminosity pointer-events-none transition-all duration-500"
+        ></div>
+        <!-- Rich emerald & slate gradient overlay so text remains high-contrast and legible -->
+        <div
+            aria-hidden="true"
+            class="absolute inset-0 bg-gradient-to-br from-emerald-950/90 via-emerald-900/80 to-emerald-950/90 pointer-events-none"
+        ></div>
+        <!-- Ambient glow accents -->
+        <div class="absolute inset-0 opacity-20 pointer-events-none">
+            <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-amber-400 blur-3xl"></div>
+            <div class="absolute bottom-0 left-10 w-80 h-80 rounded-full bg-emerald-400 blur-3xl"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+                <!-- Left Value Proposition -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm text-amber-300 text-xs font-bold">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Flagship Annex Mwiki • Kasarani Mwiki Rd (QWG7+J62)</span>
+                    </div>
+
+                    <h1 class="font-display text-3xl sm:text-5xl lg:text-[52px] font-extrabold tracking-tight leading-[1.12]">
+                        Unbeatable Prices, Fresh Finds &amp; <span class="text-amber-400">Family Fun</span> in Mwiki.
+                    </h1>
+
+                    <p id="heroSubcopyText" class="text-base sm:text-lg text-emerald-100 leading-relaxed">
+                        Backed by Powerstar Supermarket's <strong class="text-white">24+ years of trusted retail value</strong>, our Annex Mwiki branch brings you mega weekly offers, spacious dedicated parking with defined entry/exit lanes, an on-site bodaboda stage, and a kids' bouncing castle.
+                    </p>
+
+                    <!-- Primary Conversion CTAs (Customer Shopping & Inquiries) -->
+                    <div class="flex flex-col sm:flex-row gap-3 pt-1">
+                        <a href="#offers" class="inline-flex items-center justify-center gap-2.5 px-6 py-4 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-extrabold text-sm sm:text-base shadow-lg shadow-amber-500/20 transition transform hover:-translate-y-0.5">
+                            <i class="fa-solid fa-tags"></i>
+                            <span>Shop Weekly Offers</span>
+                        </a>
+                        <button type="button" onclick="openFeedbackModal('Customer Message Request')" class="inline-flex items-center justify-center gap-2.5 px-6 py-4 rounded-xl bg-white/10 hover:bg-white/20 text-white border border-white/25 font-bold text-sm sm:text-base backdrop-blur-sm transition">
+                            <i class="fa-solid fa-comments text-amber-400"></i>
+                            <span>Send Message Request</span>
+                        </button>
+                    </div>
+
+                    <!-- Executive Metrics Bar -->
+                    <div class="grid grid-cols-3 gap-4 pt-5 border-t border-emerald-800/80">
+                        <div>
+                            <div class="font-display text-xl sm:text-2xl font-extrabold text-amber-400">3.8 <span class="text-sm text-white">/ 5★</span></div>
+                            <div class="text-xs text-emerald-200">Google Verified Rating</div>
+                        </div>
+                        <div>
+                            <div id="heroHoursStat" class="font-display text-xl sm:text-2xl font-extrabold text-white">7AM–10PM</div>
+                            <div class="text-xs text-emerald-200">Open 7 Days a Week</div>
+                        </div>
+                        <div>
+                            <div class="font-display text-xl sm:text-2xl font-extrabold text-amber-400">100%</div>
+                            <div class="text-xs text-emerald-200">Parking &amp; Boda Stage</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Main Cover Photo Frame (Populated with default celebration/store photo) -->
+                <div class="lg:col-span-6">
+                    <div class="relative rounded-3xl overflow-hidden bg-emerald-950 border-2 border-emerald-600/60 shadow-2xl group">
+                        <div class="relative h-72 sm:h-96 w-full bg-emerald-900 overflow-hidden">
+                            <img
+                                id="heroCoverImg"
+                                src=""
+                                alt="Powerstar Supermarket Annex Mwiki Team Celebration & Store Cover"
+                                class="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+                            >
+
+                            <!-- Live Store Status Pill -->
+                            <div class="absolute top-4 left-4 inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-950/85 border border-emerald-500/40 text-xs font-bold text-emerald-300 backdrop-blur-md">
+                                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                                <span>ANNEX MWIKI • OPEN NOW</span>
+                            </div>
+
+                            <!-- Celebration / Store Tag -->
+                            <div class="absolute top-4 right-4 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-amber-400/95 text-slate-950 text-xs font-extrabold shadow-md">
+                                <i class="fa-solid fa-cake-candles"></i>
+                                <span>Powerstar Annex Mwiki</span>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Hero Feature Caption -->
+                        <div class="p-5 sm:p-6 bg-gradient-to-r from-emerald-950 via-emerald-900 to-emerald-950 border-t border-emerald-800/80 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                            <div>
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-0.5 rounded bg-amber-400/20 text-amber-300 text-[11px] font-extrabold uppercase">Family-First Shopping</span>
+                                    <span class="text-xs text-emerald-300">Kasarani Mwiki Rd</span>
+                                </div>
+                                <h2 id="heroCaptionTitle" class="font-display text-lg font-bold text-white mt-1">Powerstar Supermarket - Annex Mwiki</h2>
+                                <p id="heroCaptionSub" class="text-xs sm:text-sm text-emerald-200 mt-0.5">Spacious parking, kids' bouncing castle &amp; daily mega savers under one roof.</p>
+                            </div>
+                            <button type="button" onclick="shareStorePromo('Powerstar Supermarket - Annex Mwiki')" class="shrink-0 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-bold border border-white/15 transition">
+                                <i class="fa-solid fa-share-nodes text-amber-400"></i>
+                                <span>Share Store</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. WEEKLY OFFERS & CUSTOMER CATALOG (BROWSING, SEARCH, FILTER & CART ONLY) -->
+    <section id="offers" class="py-16 sm:py-20 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-8">
+                <div>
+                    <span class="text-xs font-extrabold uppercase tracking-widest text-emerald-800 bg-emerald-100 px-3 py-1 rounded-full">Live Store Catalog</span>
+                    <h2 class="mt-3 font-display text-3xl sm:text-4xl font-extrabold text-slate-900">Weekly Offers &amp; Featured Products</h2>
+                    <p class="mt-2 text-slate-600 max-w-2xl">Browse our competitive Mwiki deals, filter by department, and build your shopping list. Catalog additions and updates are managed in the <strong class="text-slate-900">Official Admin Panel</strong>.</p>
+                </div>
+
+                <!-- Search Control -->
+                <div class="flex flex-wrap items-center gap-2.5">
+                    <div class="relative flex-1 sm:w-72">
+                        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-sm"></i>
+                        <input
+                            type="text"
+                            id="productSearchInput"
+                            placeholder="Search bread, oil, maize meal..."
+                            class="w-full pl-9 pr-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-sm focus:bg-white focus:ring-2 focus:ring-emerald-600 focus:border-emerald-600 outline-none transition"
+                        >
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Department Tab Bar (Customer Filtering Only) -->
+            <div class="flex flex-wrap items-center justify-between gap-3 pb-6 mb-8 border-b border-slate-200" role="tablist" aria-label="Supermarket Departments">
+                <div class="flex flex-wrap gap-2">
+                    <button type="button" data-tab="all" class="dept-tab active px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-emerald-700 text-white shadow-sm transition">
+                        All Offers (<span id="countAll">0</span>)
+                    </button>
+                    <button type="button" data-tab="produce" class="dept-tab px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-slate-100 text-slate-700 hover:bg-emerald-50 transition">
+                        Fresh Produce
+                    </button>
+                    <button type="button" data-tab="pantry" class="dept-tab px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-slate-100 text-slate-700 hover:bg-emerald-50 transition">
+                        Pantry &amp; Household
+                    </button>
+                    <button type="button" data-tab="deli" class="dept-tab px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-slate-100 text-slate-700 hover:bg-emerald-50 transition">
+                        Deli &amp; Bakery
+                    </button>
+                    <button type="button" data-tab="kids" class="dept-tab px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-slate-100 text-slate-700 hover:bg-emerald-50 transition">
+                        Kids &amp; Family
+                    </button>
+                </div>
+
+                <button type="button" onclick="openFeedbackModal('Product Availability / Message Request')" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-slate-100 hover:bg-emerald-50 text-slate-800 hover:text-emerald-800 border border-slate-200 transition">
+                    <i class="fa-solid fa-paper-plane text-emerald-700"></i>
+                    <span>Request an Item / Message</span>
+                </button>
+            </div>
+
+            <!-- Deli Allergen & Ingredient Transparency Banner -->
+            <div id="deliSafetyBanner" class="mb-8 p-5 rounded-2xl bg-gradient-to-r from-emerald-950 to-emerald-900 text-white border border-emerald-700 shadow-md flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                <div class="flex items-start gap-4">
+                    <div class="w-11 h-11 rounded-xl bg-amber-400 text-slate-950 flex items-center justify-center shrink-0 text-lg mt-0.5">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap items-center gap-2">
+                            <h3 class="font-display font-bold text-base sm:text-lg text-amber-300">Deli Allergen &amp; Ingredient Transparency Pledge</h3>
+                            <span class="text-[11px] font-extrabold uppercase px-2 py-0.5 rounded bg-emerald-800 text-emerald-200 border border-emerald-600">100% Verified Labels</span>
+                        </div>
+                        <p class="text-xs sm:text-sm text-emerald-100 mt-1 leading-relaxed">
+                            Every hot deli dish &amp; freshly baked loaf displays clear spice and allergen tags. Our counter staff verify directly with our kitchen chef before answering any ingredient inquiry—never guessing.
+                        </p>
+                    </div>
+                </div>
+                <button type="button" onclick="openFeedbackModal('Deli Ingredient Inquiry')" class="shrink-0 px-4 py-2.5 rounded-xl bg-white text-emerald-950 hover:bg-amber-400 font-extrabold text-xs sm:text-sm transition shadow-sm">
+                    Ask Deli Chef
+                </button>
+            </div>
+
+            <!-- Live Products Grid -->
+            <div id="productsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
+        </div>
+    </section>
+
+    <!-- 3. STORE EXPERIENCE, AMENITIES & BOUNCING CASTLE -->
+    <section id="experience" class="py-16 sm:py-20 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+                <div>
+                    <span class="text-xs font-extrabold uppercase tracking-widest text-amber-700 bg-amber-100 px-3 py-1 rounded-full">Annex Mwiki Advantage</span>
+                    <h2 class="mt-3 font-display text-3xl sm:text-4xl font-extrabold text-slate-900">Built for Hassle-Free Family Shopping</h2>
+                    <p class="mt-2 text-slate-600 max-w-2xl">Designed around real Mwiki shoppers: smooth vehicle flow, quick rider pickup, and fun for children while parents shop.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="h-48 bg-emerald-950 relative overflow-hidden">
+                        <img
+                            id="amenityParkingImg"
+                            src=""
+                            alt="Dedicated Parking & Entry/Exit Lanes"
+                            onerror="this.onerror=null;this.src='https://placehold.co/800x450/064e3b/ffffff?text=Dedicated+Parking';"
+                            class="w-full h-full object-cover"
+                        >
+                        <span class="absolute bottom-3 left-3 px-2.5 py-1 rounded-lg bg-slate-950/80 text-amber-300 text-xs font-extrabold">Entry &amp; Exit Lanes</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-display text-lg font-extrabold text-slate-900">Spacious Dedicated Parking</h3>
+                        <p class="text-sm text-slate-600 mt-1.5 leading-relaxed">Clear entry and exit lanes along Kasarani Mwiki Rd make arriving and loading weekly groceries smooth and stress-free.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="h-48 bg-emerald-950 relative overflow-hidden">
+                        <img
+                            id="amenityBodaImg"
+                            src=""
+                            alt="On-Site Bodaboda Stage"
+                            onerror="this.onerror=null;this.src='https://placehold.co/800x450/064e3b/ffffff?text=Bodaboda+Stage';"
+                            class="w-full h-full object-cover"
+                        >
+                        <span class="absolute bottom-3 left-3 px-2.5 py-1 rounded-lg bg-slate-950/80 text-emerald-300 text-xs font-extrabold">Fast Rider Access</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-display text-lg font-extrabold text-slate-900">On-Site Bodaboda Stage</h3>
+                        <p class="text-sm text-slate-600 mt-1.5 leading-relaxed">Conveniently positioned bodaboda stage right at the premises so commuters and bag carriers can head home fast.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="h-48 bg-emerald-950 relative overflow-hidden">
+                        <img
+                            id="amenityCastleImg"
+                            src=""
+                            alt="Kids Bouncing Castle"
+                            onerror="this.onerror=null;this.src='https://placehold.co/800x450/064e3b/fbbf24?text=Bouncing+Castle';"
+                            class="w-full h-full object-cover"
+                        >
+                        <span class="absolute bottom-3 left-3 px-2.5 py-1 rounded-lg bg-amber-400 text-slate-950 text-xs font-extrabold">Kids' Favorite</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-display text-lg font-extrabold text-slate-900">Kids' Bouncing Castle</h3>
+                        <p class="text-sm text-slate-600 mt-1.5 leading-relaxed">A lively family treat in Mwiki—kids enjoy bouncing castle fun while families pick up fresh essentials and weekly deals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SOCIAL HUB (YOUTUBE, TIKTOK, INSTAGRAM, FACEBOOK, X) -->
+    <section id="social-hub" class="py-16 sm:py-20 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-emerald-800 bg-emerald-100 px-3 py-1 rounded-full">Daily Video &amp; Promo Highlights</span>
+                <h2 class="mt-3 font-display text-3xl sm:text-4xl font-extrabold text-slate-900">Catch Weekly Offers on Social Media</h2>
+                <p class="mt-2 text-slate-600">Follow our latest walkthroughs, fresh bakery drops, and store promos across YouTube, TikTok, Instagram, Facebook, and X.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="inline-flex items-center gap-2 text-sm font-extrabold text-red-600"><i class="fa-brands fa-youtube text-xl"></i> YouTube</span>
+                            <span class="text-xs font-bold text-slate-500">Store Walkthroughs</span>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-slate-900">Annex Mwiki Weekly Mega Savers</h3>
+                        <p class="text-sm text-slate-600 mt-1.5">See featured pantry bundles, fresh produce arrivals, and family shopping highlights.</p>
+                    </div>
+                    <a href="https://www.youtube.com/results?search_query=Powerstar+Supermarket+Nairobi" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-red-600 hover:bg-red-700 text-white text-xs font-extrabold transition">
+                        <span>Watch on YouTube</span><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+
+                <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="inline-flex items-center gap-2 text-sm font-extrabold text-slate-900"><i class="fa-brands fa-tiktok text-xl"></i> TikTok</span>
+                            <span class="text-xs font-bold text-slate-500">Quick Price Checks</span>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-slate-900">Fast Aisle Drops &amp; Bouncing Castle Vibes</h3>
+                        <p class="text-sm text-slate-600 mt-1.5">Short clips spotlighting weekend bargains, bakery treats, and Mwiki community moments.</p>
+                    </div>
+                    <a href="https://www.tiktok.com/search?q=Powerstar%20Supermarket%20Nairobi" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-extrabold transition">
+                        <span>Explore on TikTok</span><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+
+                <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="inline-flex items-center gap-2 text-sm font-extrabold text-emerald-800"><i class="fa-solid fa-hashtag text-lg"></i> IG • FB • X</span>
+                            <span class="text-xs font-bold text-slate-500">Community Updates</span>
+                        </div>
+                        <h3 class="font-display text-lg font-bold text-slate-900">Stay Connected with Powerstar</h3>
+                        <p class="text-sm text-slate-600 mt-1.5">Check seasonal announcements, holiday hours, and special promotions across our social channels.</p>
+                    </div>
+                    <div class="mt-5 flex items-center gap-2">
+                        <a href="https://www.instagram.com/explore/tags/powerstarsupermarket/" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2.5 rounded-xl bg-pink-600 hover:bg-pink-700 text-white text-xs font-extrabold transition">
+                            <i class="fa-brands fa-instagram"></i><span>IG</span>
+                        </a>
+                        <a href="https://www.facebook.com/search/top?q=Powerstar%20Supermarket" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-extrabold transition">
+                            <i class="fa-brands fa-facebook"></i><span>FB</span>
+                        </a>
+                        <a href="https://x.com/search?q=Powerstar%20Supermarket" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-950 text-white text-xs font-extrabold transition">
+                            <i class="fa-brands fa-x-twitter"></i><span>X</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. CUSTOMER REVIEWS & TRANSPARENT SERVICE FEEDBACK -->
+    <section id="reviews" class="py-16 sm:py-20 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+                <div>
+                    <span class="text-xs font-extrabold uppercase tracking-widest text-emerald-800 bg-emerald-100 px-3 py-1 rounded-full">3.8★ Average Rating</span>
+                    <h2 class="mt-3 font-display text-3xl sm:text-4xl font-extrabold text-slate-900">What Shoppers Say About Annex Mwiki</h2>
+                    <p class="mt-2 text-slate-600 max-w-2xl">We value honest shopper feedback—celebrating great prices and parking while actively improving checkout speed and service consistency.</p>
+                </div>
+                <button type="button" onclick="openFeedbackModal('Store Experience Feedback')" class="self-start md:self-auto inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white text-xs sm:text-sm font-extrabold shadow-sm transition">
+                    <i class="fa-solid fa-comment-dots text-amber-300"></i>
+                    <span>Send Message Request</span>
+                </button>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-amber-400 text-sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                        <span class="text-xs font-bold text-slate-400">Family Shopper</span>
+                    </div>
+                    <p class="text-sm text-slate-700 leading-relaxed">"Easy parking with clear entry and exit, plus the kids love the bouncing castle while we grab household staples along Mwiki Road."</p>
+                    <div class="mt-4 text-xs font-extrabold text-slate-900">Wanjiku M. • Kasarani</div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-amber-400 text-sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span>
+                        <span class="text-xs font-bold text-slate-400">Regular Customer</span>
+                    </div>
+                    <p class="text-sm text-slate-700 leading-relaxed">"Competitive prices on maize meal, cooking oil, and bakery items. Having a bodaboda stage right there makes carrying bags super convenient."</p>
+                    <div class="mt-4 text-xs font-extrabold text-slate-900">Brian O. • Mwiki</div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-amber-400 text-sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></span>
+                        <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">Actioned by Store</span>
+                    </div>
+                    <p class="text-sm text-slate-700 leading-relaxed">"Good stock variety, though evening queues can build up. Opening extra tills during peak hours makes a big difference."</p>
+                    <div class="mt-4 text-xs font-extrabold text-slate-900">Faith N. • Annex Mwiki</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. LOCATION & SISTER BRANCHES -->
+    <section id="location" class="py-16 sm:py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                <div class="lg:col-span-6 space-y-5">
+                    <span class="text-xs font-extrabold uppercase tracking-widest text-emerald-800 bg-emerald-100 px-3 py-1 rounded-full">Find Us in Mwiki</span>
+                    <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900">Powerstar Supermarket – Annex Mwiki</h2>
+                    <p class="text-slate-600 leading-relaxed">Located conveniently along <strong>Kasarani Mwiki Rd</strong> (Plus Code: <strong class="text-emerald-800">QWG7+J62</strong>), open daily from <strong>7:00 AM to 10:00 PM</strong> with dedicated entry/exit parking and an on-site bodaboda stage.</p>
+
+                    <div class="rounded-2xl bg-slate-50 border border-slate-200 p-5 space-y-3 text-sm">
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-map-location-dot text-emerald-700 mt-1"></i>
+                            <div><strong class="text-slate-900">Address:</strong> Kasarani Mwiki Rd, Annex Mwiki, Nairobi (Plus Code: QWG7+J62)</div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-clock text-emerald-700 mt-1"></i>
+                            <div><strong class="text-slate-900">Hours:</strong> <span id="locationHoursText">Monday – Sunday, 7:00 AM – 10:00 PM</span></div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-car text-emerald-700 mt-1"></i>
+                            <div><strong class="text-slate-900">Access &amp; Amenities:</strong> Dedicated parking with defined entry/exit lanes, on-site bodaboda stage, and kids' bouncing castle.</div>
+                        </div>
+                    </div>
+
+                    <div class="pt-2">
+                        <h3 class="font-display text-sm font-extrabold uppercase tracking-wider text-slate-500 mb-3">Powerstar Network &amp; Sister Branches</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                            <div class="p-3.5 rounded-xl bg-emerald-50 border border-emerald-200 font-semibold text-emerald-950">
+                                <span class="block font-extrabold">Annex Mwiki (Flagship Focus)</span>
+                                <span class="text-emerald-800">Kasarani Mwiki Rd • QWG7+J62</span>
+                            </div>
+                            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 font-semibold text-slate-700">
+                                <span class="block font-extrabold text-slate-900">Powerstar Supermarket Network</span>
+                                <span>24+ years serving Nairobi &amp; neighborhood shoppers</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6">
+                    <div class="rounded-3xl overflow-hidden border border-slate-200 shadow-lg bg-slate-100 h-80 sm:h-96">
+                        <iframe
+                            title="Powerstar Supermarket Annex Mwiki Location Map"
+                            src="https://www.google.com/maps?q=QWG7%2BJ62%20Kasarani%20Mwiki%20Rd&output=embed"
+                            class="w-full h-full border-0"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Storefront Footer -->
+    <footer class="bg-emerald-950 text-emerald-100 py-10 px-4 border-t border-emerald-900">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
+            <div>
+                <span class="font-display font-extrabold text-white text-sm">POWERSTAR SUPERMARKET • ANNEX MWIKI</span>
+                <p class="text-emerald-300 mt-0.5">Kasarani Mwiki Rd (QWG7+J62) • Open 7AM–10PM Daily</p>
+            </div>
+            <div class="flex flex-wrap items-center gap-4">
+                <a href="#offers" class="hover:text-amber-300 transition">Weekly Offers</a>
+                <a href="#experience" class="hover:text-amber-300 transition">Amenities</a>
+                <button type="button" onclick="openFeedbackModal('Customer Message Request')" class="hover:text-amber-300 transition">Send Message</button>
+                <button type="button" onclick="handleAdminPanelClick()" class="hover:text-amber-300 transition font-bold">Official Admin Panel</button>
+            </div>
+        </div>
+    </footer>
+
+    </div><!-- END #storefrontView -->
+
+    <!-- OFFICIAL STANDALONE ADMIN COMMAND CENTER VIEW ("New Page" Workspace with Dark Executive Styling) -->
+    <div id="adminWorkspaceView" class="hidden min-h-screen bg-slate-950 text-slate-100">
+        <!-- Executive Admin Top Bar -->
+        <div class="bg-slate-900 border-b border-slate-800 px-4 sm:px-6 lg:px-8 py-4">
+            <div class="max-w-7xl mx-auto flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+                <div class="flex items-center gap-3.5">
+                    <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-amber-400 to-amber-500 text-slate-950 flex items-center justify-center font-extrabold text-lg shadow-lg shadow-amber-500/15">
+                        <i class="fa-solid fa-crown"></i>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap items-center gap-2">
+                            <span class="font-display text-lg sm:text-xl font-extrabold tracking-tight text-white">POWERSTAR OFFICIAL ADMIN PAGE</span>
+                            <span class="px-2.5 py-0.5 rounded-full text-[11px] font-extrabold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+                                <i class="fa-solid fa-circle-check mr-1"></i>AUTHENTICATED (powerstar1)
+                            </span>
+                        </div>
+                        <p class="text-xs text-slate-400">Annex Mwiki Command Center • Products, Cover &amp; Background Photos, Store Settings &amp; Message Requests</p>
+                    </div>
+                </div>
+
+                <!-- Workspace Actions: Open in Standalone Browser Window/Tab or Return to Storefront -->
+                <div class="flex flex-wrap items-center gap-2.5">
+                    <button type="button" onclick="openAdminInNewWindow()" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-300 border border-slate-700 text-xs font-bold transition">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                        <span>Open New Page / Tab</span>
+                    </button>
+                    <button type="button" onclick="switchToAdminTab('add-product')" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 text-xs font-extrabold shadow-md transition">
+                        <i class="fa-solid fa-plus-circle"></i>
+                        <span>+ Add New Product</span>
+                    </button>
+                    <button type="button" onclick="returnToStorefront()" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-emerald-700 hover:bg-emerald-600 text-white text-xs font-bold transition">
+                        <i class="fa-solid fa-store"></i>
+                        <span>View Storefront</span>
+                    </button>
+                    <button type="button" onclick="lockAdminSession()" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-rose-950/70 hover:bg-rose-900 text-rose-200 border border-rose-800 text-xs font-bold transition">
+                        <i class="fa-solid fa-lock"></i>
+                        <span>Lock</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <!-- Executive KPI Strip -->
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4">
+                    <div class="text-xs font-bold uppercase text-slate-400">Active Products</div>
+                    <div id="adminKpiProducts" class="font-display text-2xl font-extrabold text-white mt-1">0</div>
+                    <div class="text-[11px] text-emerald-400 mt-1">Synced with Annex Mwiki Catalog</div>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4">
+                    <div class="text-xs font-bold uppercase text-slate-400">Message Requests</div>
+                    <div id="adminKpiMessages" class="font-display text-2xl font-extrabold text-amber-400 mt-1">0</div>
+                    <div id="adminKpiUnread" class="text-[11px] text-slate-400 mt-1">0 unread inquiries</div>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4">
+                    <div class="text-xs font-bold uppercase text-slate-400">Customer Cart Items</div>
+                    <div id="adminKpiCart" class="font-display text-2xl font-extrabold text-emerald-400 mt-1">0</div>
+                    <div class="text-[11px] text-slate-400 mt-1">Active shopper basket count</div>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4">
+                    <div class="text-xs font-bold uppercase text-slate-400">Branch &amp; Rating</div>
+                    <div class="font-display text-2xl font-extrabold text-white mt-1">3.8★ <span class="text-xs text-amber-400">QWG7+J62</span></div>
+                    <div class="text-[11px] text-slate-400 mt-1">Kasarani Mwiki Rd • 7AM–10PM</div>
+                </div>
+            </div>
+
+            <!-- Admin Sidebar + Main Content Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                <!-- Left Navigation Sidebar (3 Cols) -->
+                <div class="lg:col-span-3 bg-slate-900 border border-slate-800 rounded-3xl p-3 space-y-1.5">
+                    <button type="button" data-admin-tab="add-product" onclick="switchToAdminTab('add-product')" class="admin-nav-btn w-full flex items-center justify-between px-4 py-3 rounded-2xl text-xs sm:text-sm font-extrabold bg-amber-400 text-slate-950 transition">
+                        <span class="flex items-center gap-2.5"><i class="fa-solid fa-plus-circle"></i><span>+ Add New Product</span></span>
+                        <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </button>
+                    <button type="button" data-admin-tab="inventory" onclick="switchToAdminTab('inventory')" class="admin-nav-btn w-full flex items-center justify-between px-4 py-3 rounded-2xl text-xs sm:text-sm font-bold text-slate-300 hover:bg-slate-800 transition">
+                        <span class="flex items-center gap-2.5"><i class="fa-solid fa-boxes-stacked text-emerald-400"></i><span>Product Inventory</span></span>
+                        <span id="adminNavProdCount" class="px-2 py-0.5 rounded-full text-[11px] bg-slate-800 text-slate-200">0</span>
+                    </button>
+                    <button type="button" data-admin-tab="messages" onclick="switchToAdminTab('messages')" class="admin-nav-btn w-full flex items-center justify-between px-4 py-3 rounded-2xl text-xs sm:text-sm font-bold text-slate-300 hover:bg-slate-800 transition">
+                        <span class="flex items-center gap-2.5"><i class="fa-solid fa-inbox text-amber-400"></i><span>Message Requests</span></span>
+                        <span id="adminNavMsgCount" class="px-2 py-0.5 rounded-full text-[11px] bg-amber-500/20 text-amber-300 font-extrabold">0</span>
+                    </button>
+                    <button type="button" data-admin-tab="media" onclick="switchToAdminTab('media')" class="admin-nav-btn w-full flex items-center justify-between px-4 py-3 rounded-2xl text-xs sm:text-sm font-bold text-slate-300 hover:bg-slate-800 transition">
+                        <span class="flex items-center gap-2.5"><i class="fa-solid fa-photo-film text-sky-400"></i><span>Cover &amp; BG Photos</span></span>
+                        <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </button>
+                    <button type="button" data-admin-tab="settings" onclick="switchToAdminTab('settings')" class="admin-nav-btn w-full flex items-center justify-between px-4 py-3 rounded-2xl text-xs sm:text-sm font-bold text-slate-300 hover:bg-slate-800 transition">
+                        <span class="flex items-center gap-2.5"><i class="fa-solid fa-sliders text-purple-400"></i><span>Store Info &amp; Reset</span></span>
+                        <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </button>
+                </div>
+
+                <!-- Right Main Admin Panel (9 Cols) -->
+                <div class="lg:col-span-9 space-y-6">
+
+                    <!-- TAB 1: + ADD NEW PRODUCT -->
+                    <div id="adminTab-add-product" class="admin-section bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-xl">
+                        <div class="pb-5 mb-6 border-b border-slate-800">
+                            <span class="text-xs font-extrabold uppercase tracking-wider text-amber-400">Admin Catalog Creator</span>
+                            <h2 class="font-display text-2xl font-extrabold text-white mt-1">Add a New Product to Powerstar Annex Mwiki</h2>
+                            <p class="text-xs sm:text-sm text-slate-400 mt-1">Publish new weekly offers, pantry staples, deli items, or kids' snacks with custom pricing and photos.</p>
+                        </div>
+
+                        <form id="newProductForm" class="grid grid-cols-1 lg:grid-cols-12 gap-7">
+                            <div class="lg:col-span-7 space-y-4">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <label class="block text-xs font-extrabold uppercase text-slate-300 mb-1.5">Product Name *</label>
+                                        <input type="text" id="prodNameInput" required placeholder="e.g., Pembe Maize Meal (2 Kg)" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm focus:ring-2 focus:ring-amber-400 focus:border-amber-400 outline-none">
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-extrabold uppercase text-slate-300 mb-1.5">Department *</label>
+                                        <select id="prodCategoryInput" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm focus:ring-2 focus:ring-amber-400 outline-none">
+                                            <option value="pantry">Pantry &amp; Household</option>
+                                            <option value="produce">Fresh Produce</option>
+                                            <option value="deli">Deli &amp; Bakery</option>
+                                            <option value="kids">Kids &amp; Family</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                                    <div>
+                                        <label class="block text-xs font-extrabold uppercase text-slate-300 mb-1.5">Offer Price (KES) *</label>
+                                        <input type="number" id="prodPriceInput" required min="1" step="1" placeholder="e.g., 160" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-700 text-emerald-400 font-extrabold text-sm focus:ring-2 focus:ring-amber-400 outline-none">
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-extrabold uppercase text-slate-300 mb-1.5">Was Price (KES)</label>
+                                        <input type="number" id="prodOldPriceInput" min="1" step="1" placeholder="e.g., 195" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm focus:ring-2 focus:ring-amber-400 outline-none">
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-extrabold uppercase text-slate-300 mb-1.5">Promo Badge</label>
+                                        <div id="liveBadgePreview" class="w-full px-4 py-3 rounded-xl bg-amber-400/15 border border-amber-400/40 text-amber-300 text-xs sm:text-sm font-extrabold text-center">
+                                            NEW ARRIVAL
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-extrabold uppercase text-slate-300 mb-1.5">Description, Pack Size &amp; Allergen Note *</label>
+                                    <input type="text" id="prodNoteInput" required placeholder="e.g., Fortified sifted maize meal • Limit 4 packets per customer" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm focus:ring-2 focus:ring-amber-400 outline-none">
+                                </div>
+
+                                <div class="pt-2 flex flex-wrap items-center gap-3">
+                                    <button type="submit" class="px-6 py-3.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-extrabold text-sm shadow-lg transition flex items-center gap-2">
+                                        <i class="fa-solid fa-check-circle"></i>
+                                        <span>Save &amp; Publish Product</span>
+                                    </button>
+                                    <button type="button" onclick="resetProductForm()" class="px-5 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs sm:text-sm font-bold transition">
+                                        Clear Form
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Product Photo Uploader -->
+                            <div class="lg:col-span-5 bg-slate-950 border border-slate-800 rounded-2xl p-5 flex flex-col justify-between">
+                                <div>
+                                    <label class="block text-xs font-extrabold uppercase text-slate-300 mb-2">Product Photo (Device or URL)</label>
+                                    <div class="relative h-44 w-full rounded-xl bg-slate-900 border border-dashed border-slate-700 overflow-hidden flex items-center justify-center mb-3">
+                                        <img id="prodImgPreview" src="" alt="Product preview" class="hidden w-full h-full object-cover">
+                                        <div id="prodImgPlaceholder" class="text-center p-4">
+                                            <i class="fa-solid fa-cloud-arrow-up text-3xl text-amber-400 mb-2"></i>
+                                            <p class="text-xs font-bold text-slate-200">Upload photo or paste ./images/... / URL</p>
+                                            <p class="text-[11px] text-slate-500 mt-0.5">JPG, PNG, or WebP supported</p>
+                                        </div>
+                                    </div>
+                                    <div class="space-y-2.5">
+                                        <label class="w-full cursor-pointer inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-500/15 hover:bg-emerald-500/25 text-emerald-300 border border-emerald-500/30 font-bold text-xs transition">
+                                            <i class="fa-solid fa-folder-open"></i>
+                                            <span>Choose Image from Device</span>
+                                            <input type="file" id="prodFileInput" accept="image/*" class="hidden">
+                                        </label>
+                                        <input type="text" id="prodUrlInput" placeholder="Or enter ./images/item.jpg or https://..." class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs focus:ring-2 focus:ring-amber-400 outline-none">
+                                    </div>
+                                </div>
+                                <p class="text-[11px] text-slate-500 mt-3">Tip: Use <code class="text-amber-300">./images/your-file.jpg</code> for permanent GitHub Pages assets.</p>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- TAB 2: PRODUCT INVENTORY & QUICK PRICE/DELETE CONTROLS -->
+                    <div id="adminTab-inventory" class="admin-section hidden bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-xl">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-5 mb-6 border-b border-slate-800">
+                            <div>
+                                <span class="text-xs font-extrabold uppercase tracking-wider text-emerald-400">Catalog Management</span>
+                                <h2 class="font-display text-2xl font-extrabold text-white mt-1">Store Product Inventory</h2>
+                            </div>
+                            <button type="button" onclick="switchToAdminTab('add-product')" class="px-4 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 text-xs font-extrabold transition">
+                                + Add New Product
+                            </button>
+                        </div>
+                        <div id="adminInventoryList" class="space-y-3"></div>
+                    </div>
+
+                    <!-- TAB 3: MESSAGE REQUESTS INBOX (STORED IN localStorage) -->
+                    <div id="adminTab-messages" class="admin-section hidden bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-xl">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-5 mb-6 border-b border-slate-800">
+                            <div>
+                                <span class="text-xs font-extrabold uppercase tracking-wider text-amber-400">Customer Inbox</span>
+                                <h2 class="font-display text-2xl font-extrabold text-white mt-1">Message Requests &amp; Deli Inquiries</h2>
+                                <p class="text-xs text-slate-400 mt-0.5">Messages sent by customers from the storefront appear here automatically.</p>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <button type="button" onclick="markAllMessagesRead()" class="px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-emerald-300 text-xs font-bold transition">
+                                    Mark All Read
+                                </button>
+                                <button type="button" onclick="clearAllMessages()" class="px-3.5 py-2 rounded-xl bg-rose-950/70 hover:bg-rose-900 text-rose-200 border border-rose-800 text-xs font-bold transition">
+                                    Clear Inbox
+                                </button>
+                            </div>
+                        </div>
+                        <div id="adminMessagesList" class="space-y-3"></div>
+                    </div>
+
+                    <!-- TAB 4: COVER PHOTO, GREEN BACKGROUND PHOTO & AMENITY PHOTOS -->
+                    <div id="adminTab-media" class="admin-section hidden bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-xl">
+                        <div class="pb-5 mb-6 border-b border-slate-800">
+                            <span class="text-xs font-extrabold uppercase tracking-wider text-sky-400">Visual Media Studio</span>
+                            <h2 class="font-display text-2xl font-extrabold text-white mt-1">Green Hero Background, Cover &amp; Store Photos</h2>
+                            <p class="text-xs sm:text-sm text-slate-400 mt-1">Upload images from your device or set permanent relative paths (such as <code class="text-amber-300">./images/celebration-bg.jpg</code>).</p>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Green Hero Section Background Photo -->
+                            <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5 space-y-3">
+                                <div class="flex items-center justify-between">
+                                    <h3 class="font-display font-bold text-white text-sm">1. Green Hero Background Photo</h3>
+                                    <span class="text-[11px] font-bold text-amber-300">Hero BG</span>
+                                </div>
+                                <img id="adminPreviewHeroBg" src="" alt="Green Hero BG Preview" class="w-full h-36 object-cover rounded-xl bg-slate-900">
+                                <label class="w-full cursor-pointer inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold transition">
+                                    <i class="fa-solid fa-upload text-amber-400"></i>
+                                    <span>Upload Green BG Image</span>
+                                    <input type="file" accept="image/*" onchange="handleMediaFileChange('heroBg', event)" class="hidden">
+                                </label>
+                                <div class="flex gap-2">
+                                    <input type="text" id="mediaUrl-heroBg" placeholder="./images/celebration-bg.jpg or URL" class="flex-1 px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs">
+                                    <button type="button" onclick="applyMediaUrlInput('heroBg')" class="px-3 py-2 rounded-xl bg-emerald-700 hover:bg-emerald-600 text-white text-xs font-bold">Save</button>
+                                </div>
+                            </div>
+
+                            <!-- Main Hero Cover Photo -->
+                            <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5 space-y-3">
+                                <div class="flex items-center justify-between">
+                                    <h3 class="font-display font-bold text-white text-sm">2. Hero Cover Photo Frame</h3>
+                                    <span class="text-[11px] font-bold text-emerald-300">Main Cover</span>
+                                </div>
+                                <img id="adminPreviewCover" src="" alt="Cover Preview" class="w-full h-36 object-cover rounded-xl bg-slate-900">
+                                <label class="w-full cursor-pointer inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold transition">
+                                    <i class="fa-solid fa-upload text-amber-400"></i>
+                                    <span>Upload Cover Image</span>
+                                    <input type="file" accept="image/*" onchange="handleMediaFileChange('cover', event)" class="hidden">
+                                </label>
+                                <div class="flex gap-2">
+                                    <input type="text" id="mediaUrl-cover" placeholder="./images/store-cover.jpg or URL" class="flex-1 px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs">
+                                    <button type="button" onclick="applyMediaUrlInput('cover')" class="px-3 py-2 rounded-xl bg-emerald-700 hover:bg-emerald-600 text-white text-xs font-bold">Save</button>
+                                </div>
+                            </div>
+
+                            <!-- Amenity: Parking -->
+                            <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5 space-y-3">
+                                <h3 class="font-display font-bold text-white text-sm">3. Dedicated Parking Photo</h3>
+                                <img id="adminPreviewParking" src="" alt="Parking Preview" class="w-full h-32 object-cover rounded-xl bg-slate-900">
+                                <label class="w-full cursor-pointer inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold transition">
+                                    <i class="fa-solid fa-upload text-amber-400"></i>
+                                    <span>Upload Parking Photo</span>
+                                    <input type="file" accept="image/*" onchange="handleMediaFileChange('parking', event)" class="hidden">
+                                </label>
+                            </div>
+
+                            <!-- Amenity: Bouncing Castle -->
+                            <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5 space-y-3">
+                                <h3 class="font-display font-bold text-white text-sm">4. Kids' Bouncing Castle Photo</h3>
+                                <img id="adminPreviewCastle" src="" alt="Castle Preview" class="w-full h-32 object-cover rounded-xl bg-slate-900">
+                                <label class="w-full cursor-pointer inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold transition">
+                                    <i class="fa-solid fa-upload text-amber-400"></i>
+                                    <span>Upload Bouncing Castle Photo</span>
+                                    <input type="file" accept="image/*" onchange="handleMediaFileChange('castle', event)" class="hidden">
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 pt-4 border-t border-slate-800 flex justify-end">
+                            <button type="button" onclick="resetMediaDefaults()" class="px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold transition">
+                                <i class="fa-solid fa-rotate-left mr-1"></i> Restore Default Celebration &amp; Store Photos
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- TAB 5: STORE SETTINGS & DEMO RESET -->
+                    <div id="adminTab-settings" class="admin-section hidden bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-xl space-y-6">
+                        <div class="pb-4 border-b border-slate-800">
+                            <span class="text-xs font-extrabold uppercase tracking-wider text-purple-400">Branch Configuration</span>
+                            <h2 class="font-display text-2xl font-extrabold text-white mt-1">Annex Mwiki Store Details &amp; Data Controls</h2>
+                        </div>
+
+                        <form id="storeSettingsForm" class="space-y-4 max-w-2xl">
+                            <div>
+                                <label class="block text-xs font-extrabold uppercase text-slate-300 mb-1.5">Hero Caption Title</label>
+                                <input type="text" id="settingHeroTitle" class="w-full px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-extrabold uppercase text-slate-300 mb-1.5">Hero Caption Subtitle</label>
+                                <input type="text" id="settingHeroSub" class="w-full px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-extrabold uppercase text-slate-300 mb-1.5">Operating Hours Label</label>
+                                <input type="text" id="settingHoursText" class="w-full px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm">
+                            </div>
+                            <div class="flex flex-wrap gap-3 pt-2">
+                                <button type="submit" class="px-5 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 text-xs sm:text-sm font-extrabold transition">
+                                    Save Store Details
+                                </button>
+                                <button type="button" onclick="resetDemoCatalog()" class="px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs sm:text-sm font-bold transition">
+                                    Reset Sample Products
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ADMIN PASSKEY MODAL (Required Passkey: powerstar1) -->
+    <div id="adminPasskeyModal" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-slate-900 text-white rounded-3xl max-w-md w-full p-6 sm:p-7 shadow-2xl border border-slate-700">
+            <div class="flex items-center justify-between pb-4 mb-4 border-b border-slate-800">
+                <div class="flex items-center gap-2.5">
+                    <div class="w-10 h-10 rounded-xl bg-amber-400/15 border border-amber-400/40 text-amber-400 flex items-center justify-center">
+                        <i class="fa-solid fa-key"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-display text-lg font-extrabold text-white">Official Admin Access</h3>
+                        <p class="text-[11px] text-slate-400">Powerstar Supermarket • Annex Mwiki</p>
+                    </div>
+                </div>
+                <button type="button" onclick="closePasskeyModal()" class="p-2 rounded-xl text-slate-400 hover:text-white hover:bg-slate-800">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <form id="adminPasskeyForm" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-extrabold uppercase text-slate-300 mb-1.5">Enter Admin Passkey</label>
+                    <input
+                        type="password"
+                        id="adminPasskeyInput"
+                        required
+                        autocomplete="off"
+                        placeholder="Enter passkey..."
+                        class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm focus:ring-2 focus:ring-amber-400 focus:border-amber-400 outline-none"
+                    >
+                    <p id="passkeyErrorText" class="hidden text-xs font-bold text-rose-400 mt-1.5">
+                        <i class="fa-solid fa-circle-exclamation mr-1"></i>Incorrect passkey. Try again.
+                    </p>
+                </div>
+
+                <div class="flex items-center justify-end gap-2.5 pt-2">
+                    <button type="button" onclick="closePasskeyModal()" class="px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-bold transition">
+                        Cancel
+                    </button>
+                    <button type="submit" class="px-5 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 text-xs sm:text-sm font-extrabold shadow-lg transition">
+                        Unlock Admin Panel
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toastBanner" class="hidden fixed bottom-5 right-5 z-50 max-w-sm bg-slate-900 text-white px-4 py-3 rounded-2xl shadow-xl border border-slate-700 text-xs sm:text-sm font-bold flex items-center gap-2.5">
+        <i class="fa-solid fa-circle-check text-amber-400 text-base"></i>
+        <span id="toastMessage">Updated</span>
+    </div>
+
+    <script>
+        const ADMIN_PASSKEY = "powerstar1";
+
+        const STORAGE_KEYS = {
+            products: "powerstar_mwiki_products_v2",
+            media: "powerstar_mwiki_media_v2",
+            cart: "powerstar_mwiki_cart_v2",
+            messages: "powerstar_mwiki_messages_v2",
+            settings: "powerstar_mwiki_settings_v2",
+            adminSession: "powerstar_mwiki_admin_auth_v2"
+        };
+
+        // Generates a clean canvas data URL of the Powerstar Annex Mwiki cake celebration scene as instant offline fallback
+        function createCelebrationFallbackDataUrl() {
+            try {
+                const canvas = document.createElement("canvas");
+                canvas.width = 960;
+                canvas.height = 640;
+                const ctx = canvas.getContext("2d");
+
+                // Store interior wall & green shutter backdrop
+                ctx.fillStyle = "#e8ece8";
+                ctx.fillRect(0, 0, 960, 640);
+                ctx.fillStyle = "#16a34a";
+                ctx.fillRect(0, 0, 210, 420);
+                ctx.fillStyle = "#15803d";
+                for (let x = 25; x < 200; x += 35) {
+                    ctx.fillRect(x, 20, 12, 380);
+                }
+
+                // Tiled floor
+                ctx.fillStyle = "#d1d5db";
+                ctx.fillRect(0, 420, 960, 220);
+
+                // Festive cake table with red/white check cloth
+                ctx.fillStyle = "#dc2626";
+                ctx.beginPath();
+                ctx.arc(470, 505, 130, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.strokeStyle = "#ffffff";
+                ctx.lineWidth = 4;
+                ctx.stroke();
+
+                // Sheet cake with green/red trim
+                ctx.fillStyle = "#fef2f2";
+                ctx.fillRect(380, 385, 195, 95);
+                ctx.strokeStyle = "#16a34a";
+                ctx.lineWidth = 6;
+                ctx.strokeRect(383, 388, 189, 89);
+
+                // Team silhouettes / celebration figures
+                const teamColors = ["#ef4444", "#1d4ed8", "#1e3a8a", "#ffffff", "#ef4444", "#ef4444"];
+                const xPositions = [150, 440, 515, 595, 760, 890];
+                xPositions.forEach((cx, idx) => {
+                    ctx.fillStyle = teamColors[idx];
+                    ctx.fillRect(cx - 28, 225, 56, 155);
+                    ctx.fillStyle = "#92400e";
+                    ctx.beginPath();
+                    ctx.arc(cx, 185, 28, 0, Math.PI * 2);
+                    ctx.fill();
+                });
+
+                // Balloons
+                const balloons = [
+                    { x: 390, y: 80, c: "#22c55e" },
+                    { x: 580, y: 65, c: "#ef4444" },
+                    { x: 625, y: 78, c: "#22c55e" }
+                ];
+                balloons.forEach((b) => {
+                    ctx.fillStyle = b.c;
+                    ctx.beginPath();
+                    ctx.arc(b.x, b.y, 24, 0, Math.PI * 2);
+                    ctx.fill();
+                });
+
+                return canvas.toDataURL("image/jpeg", 0.85);
+            } catch {
+                return "https://placehold.co/960x640/064e3b/fbbf24?text=Powerstar+Annex+Mwiki";
+            }
+        }
+
+        const CELEBRATION_FALLBACK = createCelebrationFallbackDataUrl();
+
+        const DEFAULT_MEDIA = {
+            heroBg: "./images/celebration-bg.jpg",
+            cover: "./images/celebration-bg.jpg",
+            parking: "https://images.unsplash.com/photo-1590674899484-d5640e854abe?auto=format&fit=crop&w=900&q=80",
+            boda: "https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=900&q=80",
+            castle: "https://images.unsplash.com/photo-1566140967404-b8b3932483f5?auto=format&fit=crop&w=900&q=80"
+        };
+
+        const DEFAULT_SETTINGS = {
+            heroTitle: "Powerstar Supermarket - Annex Mwiki",
+            heroSub: "Spacious parking, kids' bouncing castle & daily mega savers under one roof.",
+            hoursText: "Monday – Sunday, 7:00 AM – 10:00 PM"
+        };
+
+        const DEFAULT_PRODUCTS = [
+            {
+                id: 1,
+                name: "Pembe Maize Meal (2 Kg)",
+                category: "pantry",
+                price: 160,
+                oldPrice: 195,
+                note: "Fortified sifted maize meal • Daily Mwiki saver",
+                img: "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=700&q=80"
+            },
+            {
+                id: 2,
+                name: "Fresh Farm Tomatoes & Greens",
+                category: "produce",
+                price: 120,
+                oldPrice: 150,
+                note: "Picked fresh for Annex Mwiki shoppers • Verified produce",
+                img: "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=700&q=80"
+            },
+            {
+                id: 3,
+                name: "Freshly Baked White Loaf (400g)",
+                category: "deli",
+                price: 65,
+                oldPrice: 70,
+                note: "Contains wheat gluten • Baked daily",
+                img: "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=700&q=80"
+            },
+            {
+                id: 4,
+                name: "Golden Cooking Oil (2 Litres)",
+                category: "pantry",
+                price: 540,
+                oldPrice: 610,
+                note: "Clear kitchen oil • Great family value size",
+                img: "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=700&q=80"
+            },
+            {
+                id: 5,
+                name: "Kids' Snack & Juice Combo",
+                category: "kids",
+                price: 250,
+                oldPrice: 290,
+                note: "Ideal treat after bouncing castle fun",
+                img: "https://images.unsplash.com/photo-1621939514649-280e2ee25f60?auto=format&fit=crop&w=700&q=80"
+            },
+            {
+                id: 6,
+                name: "Hot Deli Chicken & Spice Pack",
+                category: "deli",
+                price: 380,
+                oldPrice: 430,
+                note: "Allergen & spice labels checked with kitchen chef",
+                img: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?auto=format&fit=crop&w=700&q=80"
+            }
+        ];
+
+        function loadFromStorage(key, fallback) {
+            try {
+                const raw = localStorage.getItem(key);
+                return raw ? JSON.parse(raw) : structuredClone(fallback);
+            } catch {
+                return structuredClone(fallback);
+            }
+        }
+
+        function saveToStorage(key, value) {
+            try {
+                localStorage.setItem(key, JSON.stringify(value));
+            } catch {
+                showToast("Storage limit reached; try smaller images or external URLs.");
+            }
+        }
+
+        function showToast(msg) {
+            const banner = document.getElementById("toastBanner");
+            document.getElementById("toastMessage").textContent = msg;
+            banner.classList.remove("hidden");
+            clearTimeout(window.__toastTimer);
+            window.__toastTimer = setTimeout(() => banner.classList.add("hidden"), 3200);
+        }
+
+        let products = loadFromStorage(STORAGE_KEYS.products, DEFAULT_PRODUCTS);
+        let media = { ...DEFAULT_MEDIA, ...loadFromStorage(STORAGE_KEYS.media, DEFAULT_MEDIA) };
+        let cart = loadFromStorage(STORAGE_KEYS.cart, []);
+        let messages = loadFromStorage(STORAGE_KEYS.messages, []);
+        let settings = { ...DEFAULT_SETTINGS, ...loadFromStorage(STORAGE_KEYS.settings, DEFAULT_SETTINGS) };
+        let isAdminAuthenticated = sessionStorage.getItem(STORAGE_KEYS.adminSession) === "true";
+        let activeTab = "all";
+        let activeAdminSection = "add-product";
+        let pendingAdminTarget = "add-product";
+        let uploadedProductDataUrl = "";
+
+        // Resolve image source with automatic celebration fallback if local file is missing
+        function resolveImageWithFallback(src, onReady) {
+            const targetSrc = src || CELEBRATION_FALLBACK;
+            const probe = new Image();
+            probe.onload = () => onReady(targetSrc);
+            probe.onerror = () => onReady(CELEBRATION_FALLBACK);
+            probe.src = targetSrc;
+        }
+
+        function applyMediaAndSettings() {
+            const bgLayer = document.getElementById("heroCelebrationBgLayer");
+            resolveImageWithFallback(media.heroBg, (validBg) => {
+                bgLayer.style.backgroundImage = `url('${validBg}')`;
+                const adminBgPreview = document.getElementById("adminPreviewHeroBg");
+                if (adminBgPreview) adminBgPreview.src = validBg;
+            });
+
+            const coverImg = document.getElementById("heroCoverImg");
+            resolveImageWithFallback(media.cover, (validCover) => {
+                coverImg.src = validCover;
+                const adminCoverPreview = document.getElementById("adminPreviewCover");
+                if (adminCoverPreview) adminCoverPreview.src = validCover;
+            });
+
+            document.getElementById("amenityParkingImg").src = media.parking || DEFAULT_MEDIA.parking;
+            document.getElementById("amenityBodaImg").src = media.boda || DEFAULT_MEDIA.boda;
+            document.getElementById("amenityCastleImg").src = media.castle || DEFAULT_MEDIA.castle;
+
+            const adminParkingPreview = document.getElementById("adminPreviewParking");
+            const adminCastlePreview = document.getElementById("adminPreviewCastle");
+            if (adminParkingPreview) adminParkingPreview.src = media.parking || DEFAULT_MEDIA.parking;
+            if (adminCastlePreview) adminCastlePreview.src = media.castle || DEFAULT_MEDIA.castle;
+
+            const urlHeroBg = document.getElementById("mediaUrl-heroBg");
+            const urlCover = document.getElementById("mediaUrl-cover");
+            if (urlHeroBg) urlHeroBg.value = media.heroBg || "";
+            if (urlCover) urlCover.value = media.cover || "";
+
+            document.getElementById("heroCaptionTitle").textContent = settings.heroTitle || DEFAULT_SETTINGS.heroTitle;
+            document.getElementById("heroCaptionSub").textContent = settings.heroSub || DEFAULT_SETTINGS.heroSub;
+            document.getElementById("locationHoursText").textContent = settings.hoursText || DEFAULT_SETTINGS.hoursText;
+
+            const setTitle = document.getElementById("settingHeroTitle");
+            const setSub = document.getElementById("settingHeroSub");
+            const setHours = document.getElementById("settingHoursText");
+            if (setTitle) setTitle.value = settings.heroTitle || DEFAULT_SETTINGS.heroTitle;
+            if (setSub) setSub.value = settings.heroSub || DEFAULT_SETTINGS.heroSub;
+            if (setHours) setHours.value = settings.hoursText || DEFAULT_SETTINGS.hoursText;
+        }
+
+        // Admin passkey flow (passkey: powerstar1)
+        function handleAdminPanelClick(targetTab = "add-product") {
+            pendingAdminTarget = targetTab;
+            if (isAdminAuthenticated) {
+                openAdminWorkspace(targetTab);
+                return;
+            }
+            document.getElementById("passkeyErrorText").classList.add("hidden");
+            document.getElementById("adminPasskeyInput").value = "";
+            document.getElementById("adminPasskeyModal").classList.remove("hidden");
+            setTimeout(() => document.getElementById("adminPasskeyInput").focus(), 60);
+        }
+
+        function closePasskeyModal() {
+            document.getElementById("adminPasskeyModal").classList.add("hidden");
+        }
+
+        document.getElementById("adminPasskeyForm").addEventListener("submit", (e) => {
+            e.preventDefault();
+            const entered = document.getElementById("adminPasskeyInput").value.trim();
+            if (entered === ADMIN_PASSKEY) {
+                isAdminAuthenticated = true;
+                sessionStorage.setItem(STORAGE_KEYS.adminSession, "true");
+                closePasskeyModal();
+                updateAdminHeaderBadge();
+                openAdminWorkspace(pendingAdminTarget);
+                showToast("Welcome to the Official Powerstar Admin Page.");
+            } else {
+                document.getElementById("passkeyErrorText").classList.remove("hidden");
+            }
+        });
+
+        function updateAdminHeaderBadge() {
+            const btnText = document.getElementById("adminPanelBtnText");
+            const lockIcon = document.getElementById("adminLockIcon");
+            const mobileLabel = document.getElementById("mobileAdminLabel");
+            if (isAdminAuthenticated) {
+                btnText.textContent = "Admin Page";
+                lockIcon.className = "fa-solid fa-unlock-keyhole text-emerald-400";
+                if (mobileLabel) mobileLabel.textContent = "Open Official Admin Page";
+            } else {
+                btnText.textContent = "Admin Panel";
+                lockIcon.className = "fa-solid fa-shield-halved text-amber-400";
+                if (mobileLabel) mobileLabel.textContent = "Official Admin Panel";
+            }
+        }
+
+        function openAdminWorkspace(tabName = "add-product") {
+            document.getElementById("storefrontView").classList.add("hidden");
+            document.getElementById("adminWorkspaceView").classList.remove("hidden");
+            switchToAdminTab(tabName);
+            renderAdminDashboard();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+
+        function returnToStorefront() {
+            document.getElementById("adminWorkspaceView").classList.add("hidden");
+            document.getElementById("storefrontView").classList.remove("hidden");
+            renderProducts();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+
+        function lockAdminSession() {
+            isAdminAuthenticated = false;
+            sessionStorage.removeItem(STORAGE_KEYS.adminSession);
+            updateAdminHeaderBadge();
+            returnToStorefront();
+            showToast("Admin session locked.");
+        }
+
+        function openAdminInNewWindow() {
+            try {
+                const win = window.open(window.location.href, "_blank", "noopener");
+                if (win) {
+                    showToast("Opened in a new tab—click Admin Panel and enter passkey.");
+                } else {
+                    showToast("Pop-up blocked by browser; using current workspace view.");
+                }
+            } catch {
+                showToast("Unable to open new window automatically.");
+            }
+        }
+
+        function switchToAdminTab(tabName) {
+            activeAdminSection = tabName;
+            document.querySelectorAll(".admin-section").forEach((sec) => sec.classList.add("hidden"));
+            const targetEl = document.getElementById(`adminTab-${tabName}`);
+            if (targetEl) targetEl.classList.remove("hidden");
+
+            document.querySelectorAll(".admin-nav-btn").forEach((btn) => {
+                const isSelected = btn.dataset.adminTab === tabName;
+                if (isSelected) {
+                    btn.className = "admin-nav-btn w-full flex items-center justify-between px-4 py-3 rounded-2xl text-xs sm:text-sm font-extrabold bg-amber-400 text-slate-950 transition";
+                } else {
+                    btn.className = "admin-nav-btn w-full flex items-center justify-between px-4 py-3 rounded-2xl text-xs sm:text-sm font-bold text-slate-300 hover:bg-slate-800 transition";
+                }
+            });
+            renderAdminDashboard();
+        }
+
+        // Admin product creation & live discount badge
+        function updateLiveBadgePreview() {
+            const price = Number(document.getElementById("prodPriceInput").value || 0);
+            const oldPrice = Number(document.getElementById("prodOldPriceInput").value || 0);
+            const badgeEl = document.getElementById("liveBadgePreview");
+            if (price > 0 && oldPrice > price) {
+                const pct = Math.round(((oldPrice - price) / oldPrice) * 100);
+                badgeEl.textContent = `SAVE ${pct}%`;
+            } else {
+                badgeEl.textContent = "WEEKLY OFFER";
+            }
+        }
+
+        document.getElementById("prodPriceInput").addEventListener("input", updateLiveBadgePreview);
+        document.getElementById("prodOldPriceInput").addEventListener("input", updateLiveBadgePreview);
+
+        document.getElementById("prodFileInput").addEventListener("change", (e) => {
+            const file = e.target.files && e.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = () => {
+                uploadedProductDataUrl = reader.result;
+                document.getElementById("prodUrlInput").value = "";
+                showProductPreview(uploadedProductDataUrl);
+            };
+            reader.readAsDataURL(file);
+        });
+
+        document.getElementById("prodUrlInput").addEventListener("input", (e) => {
+            const val = e.target.value.trim();
+            if (val) {
+                uploadedProductDataUrl = "";
+                showProductPreview(val);
+            } else if (!uploadedProductDataUrl) {
+                hideProductPreview();
+            }
+        });
+
+        function showProductPreview(src) {
+            const img = document.getElementById("prodImgPreview");
+            const placeholder = document.getElementById("prodImgPlaceholder");
+            img.src = src;
+            img.classList.remove("hidden");
+            placeholder.classList.add("hidden");
+        }
+
+        function hideProductPreview() {
+            const img = document.getElementById("prodImgPreview");
+            const placeholder = document.getElementById("prodImgPlaceholder");
+            img.src = "";
+            img.classList.add("hidden");
+            placeholder.classList.remove("hidden");
+        }
+
+        function resetProductForm() {
+            document.getElementById("newProductForm").reset();
+            uploadedProductDataUrl = "";
+            document.getElementById("liveBadgePreview").textContent = "WEEKLY OFFER";
+            hideProductPreview();
+        }
+
+        document.getElementById("newProductForm").addEventListener("submit", (e) => {
+            e.preventDefault();
+            if (!isAdminAuthenticated) {
+                handleAdminPanelClick("add-product");
+                return;
+            }
+            const name = document.getElementById("prodNameInput").value.trim();
+            const category = document.getElementById("prodCategoryInput").value;
+            const price = Number(document.getElementById("prodPriceInput").value);
+            const oldPriceRaw = Number(document.getElementById("prodOldPriceInput").value);
+            const oldPrice = oldPriceRaw > price ? oldPriceRaw : null;
+            const note = document.getElementById("prodNoteInput").value.trim();
+            const urlInputVal = document.getElementById("prodUrlInput").value.trim();
+
+            const finalImg = uploadedProductDataUrl || urlInputVal || "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=700&q=80";
+
+            const newItem = {
+                id: Date.now(),
+                name,
+                category,
+                price,
+                oldPrice,
+                note,
+                img: finalImg
+            };
+
+            products.unshift(newItem);
+            saveToStorage(STORAGE_KEYS.products, products);
+            resetProductForm();
+            renderProducts();
+            renderAdminDashboard();
+            showToast(`Published "${name}" to Annex Mwiki catalog!`);
+        });
+
+        function deleteProduct(id) {
+            if (!isAdminAuthenticated) return;
+            products = products.filter((p) => p.id !== id);
+            saveToStorage(STORAGE_KEYS.products, products);
+            renderProducts();
+            renderAdminDashboard();
+            showToast("Product removed from catalog.");
+        }
+
+        function resetDemoCatalog() {
+            products = structuredClone(DEFAULT_PRODUCTS);
+            saveToStorage(STORAGE_KEYS.products, products);
+            renderProducts();
+            renderAdminDashboard();
+            showToast("Default Annex Mwiki sample products restored.");
+        }
+
+        // Admin media & settings handlers
+        function handleMediaFileChange(slotKey, event) {
+            if (!isAdminAuthenticated) return;
+            const file = event.target.files && event.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = () => {
+                media[slotKey] = reader.result;
+                saveToStorage(STORAGE_KEYS.media, media);
+                applyMediaAndSettings();
+                showToast("Updated image in store.");
+            };
+            reader.readAsDataURL(file);
+        }
+
+        function applyMediaUrlInput(slotKey) {
+            if (!isAdminAuthenticated) return;
+            const input = document.getElementById(`mediaUrl-${slotKey}`);
+            if (!input) return;
+            const val = input.value.trim();
+            if (!val) return;
+            media[slotKey] = val;
+            saveToStorage(STORAGE_KEYS.media, media);
+            applyMediaAndSettings();
+            showToast("Saved image path.");
+        }
+
+        function resetMediaDefaults() {
+            if (!isAdminAuthenticated) return;
+            media = structuredClone(DEFAULT_MEDIA);
+            saveToStorage(STORAGE_KEYS.media, media);
+            applyMediaAndSettings();
+            showToast("Restored default celebration & store images.");
+        }
+
+        document.getElementById("storeSettingsForm").addEventListener("submit", (e) => {
+            e.preventDefault();
+            if (!isAdminAuthenticated) return;
+            settings = {
+                heroTitle: document.getElementById("settingHeroTitle").value.trim() || DEFAULT_SETTINGS.heroTitle,
+                heroSub: document.getElementById("settingHeroSub").value.trim() || DEFAULT_SETTINGS.heroSub,
+                hoursText: document.getElementById("settingHoursText").value.trim() || DEFAULT_SETTINGS.hoursText
+            };
+            saveToStorage(STORAGE_KEYS.settings, settings);
+            applyMediaAndSettings();
+            showToast("Store details updated.");
+        });
+
+        // Admin inbox rendering & actions
+        function renderAdminDashboard() {
+            messages = loadFromStorage(STORAGE_KEYS.messages, []);
+            const unreadCount = messages.filter((m) => !m.read).length;
+            const cartCount = cart.reduce((sum, item) => sum + item.qty, 0);
+
+            document.getElementById("adminKpiProducts").textContent = products.length;
+            document.getElementById("adminKpiMessages").textContent = messages.length;
+            document.getElementById("adminKpiUnread").textContent = `${unreadCount} unread inquiries`;
+            document.getElementById("adminKpiCart").textContent = cartCount;
+
+            document.getElementById("adminNavProdCount").textContent = products.length;
+            document.getElementById("adminNavMsgCount").textContent = messages.length;
+
+            // Inventory list
+            const invContainer = document.getElementById("adminInventoryList");
+            if (products.length === 0) {
+                invContainer.innerHTML = `<div class="p-8 text-center rounded-2xl bg-slate-950 border border-slate-800 text-slate-400 text-sm">No products in catalog. Click "+ Add New Product" to create one.</div>`;
+            } else {
+                invContainer.innerHTML = products.map((item) => `
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-4 rounded-2xl bg-slate-950 border border-slate-800">
+                        <div class="flex items-center gap-3.5">
+                            <img src="${item.img}" alt="${item.name}" onerror="this.onerror=null;this.src='${CELEBRATION_FALLBACK}';" class="w-14 h-14 rounded-xl object-cover bg-slate-800 shrink-0">
+                            <div>
+                                <div class="flex items-center gap-2">
+                                    <span class="font-display font-bold text-white text-sm">${item.name}</span>
+                                    <span class="px-2 py-0.5 rounded text-[10px] font-extrabold uppercase bg-emerald-500/15 text-emerald-300">${item.category}</span>
+                                </div>
+                                <div class="text-xs text-slate-400 mt-0.5">${item.note}</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between sm:justify-end gap-4">
+                            <div class="text-right">
+                                <div class="font-display font-extrabold text-amber-400 text-sm">KES ${Number(item.price).toLocaleString()}</div>
+                                ${item.oldPrice ? `<div class="text-[11px] text-slate-500 line-through">KES ${Number(item.oldPrice).toLocaleString()}</div>` : ""}
+                            </div>
+                            <button type="button" onclick="deleteProduct(${item.id})" class="px-3 py-2 rounded-xl bg-rose-950/70 hover:bg-rose-900 text-rose-200 border border-rose-800 text-xs font-bold transition" title="Delete Product">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+                `).join("");
+            }
+
+            // Message requests list
+            const msgContainer = document.getElementById("adminMessagesList");
+            if (messages.length === 0) {
+                msgContainer.innerHTML = `<div class="p-8 text-center rounded-2xl bg-slate-950 border border-slate-800 text-slate-400 text-sm">No customer message requests yet. Submissions from the storefront will show up here.</div>`;
+            } else {
+                msgContainer.innerHTML = messages.map((m) => `
+                    <div class="p-4 rounded-2xl bg-slate-950 border ${m.read ? "border-slate-800" : "border-amber-400/50"} space-y-2.5">
+                        <div class="flex flex-wrap items-center justify-between gap-2">
+                            <div class="flex items-center gap-2">
+                                <span class="px-2.5 py-0.5 rounded-full text-[10px] font-extrabold uppercase ${m.read ? "bg-slate-800 text-slate-400" : "bg-amber-400 text-slate-950"}">${m.read ? "Read" : "New Request"}</span>
+                                <span class="font-display font-bold text-white text-sm">${m.topic || "Message Request"}</span>
+                            </div>
+                            <span class="text-[11px] text-slate-500">${m.createdAt}</span>
+                        </div>
+                        <p class="text-xs sm:text-sm text-slate-200 leading-relaxed">${m.text}</p>
+                        <div class="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-slate-900 text-xs">
+                            <div class="text-slate-400">
+                                <strong class="text-slate-200">${m.senderName}</strong>
+                                ${m.contact ? ` • <span class="text-emerald-400">${m.contact}</span>` : ""}
+                            </div>
+                            <div class="flex items-center gap-2">
+                                ${!m.read ? `<button type="button" onclick="toggleMessageRead(${m.id})" class="px-3 py-1 rounded-lg bg-emerald-800 hover:bg-emerald-700 text-white text-[11px] font-bold transition">Mark Read</button>` : ""}
+                                <button type="button" onclick="deleteMessageRequest(${m.id})" class="px-3 py-1 rounded-lg bg-slate-800 hover:bg-rose-900 text-slate-300 hover:text-white text-[11px] font-bold transition">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                `).join("");
+            }
+        }
+
+        function toggleMessageRead(id) {
+            messages = messages.map((m) => (m.id === id ? { ...m, read: true } : m));
+            saveToStorage(STORAGE_KEYS.messages, messages);
+            renderAdminDashboard();
+        }
+
+        function markAllMessagesRead() {
+            messages = messages.map((m) => ({ ...m, read: true }));
+            saveToStorage(STORAGE_KEYS.messages, messages);
+            renderAdminDashboard();
+            showToast("All message requests marked as read.");
+        }
+
+        function deleteMessageRequest(id) {
+            messages = messages.filter((m) => m.id !== id);
+            saveToStorage(STORAGE_KEYS.messages, messages);
+            renderAdminDashboard();
+            showToast("Message request deleted.");
+        }
+
+        function clearAllMessages() {
+            messages = [];
+            saveToStorage(STORAGE_KEYS.messages, messages);
+            renderAdminDashboard();
+            showToast("Message requests inbox cleared.");
+        }
+
+        // Customer storefront rendering & cart logic
+        function getBadgeLabel(item) {
+            if (item.oldPrice && item.oldPrice > item.price) {
+                const pct = Math.round(((item.oldPrice - item.price) / item.oldPrice) * 100);
+                return `SAVE ${pct}%`;
+            }
+            return "WEEKLY OFFER";
+        }
+
+        function renderProducts() {
+            const query = (document.getElementById("productSearchInput").value || "").toLowerCase().trim();
+            document.getElementById("countAll").textContent = products.length;
+
+            const filtered = products.filter((item) => {
+                const matchesTab = activeTab === "all" || item.category === activeTab;
+                const matchesQuery = !query ||
+                    item.name.toLowerCase().includes(query) ||
+                    item.note.toLowerCase().includes(query);
+                return matchesTab && matchesQuery;
+            });
+
+            const grid = document.getElementById("productsGrid");
+            if (filtered.length === 0) {
+                grid.innerHTML = `
+                    <div class="col-span-full text-center py-12 bg-slate-50 rounded-2xl border border-slate-200">
+                        <p class="font-display font-bold text-slate-800">No products match your filter.</p>
+                        <p class="text-xs text-slate-500 mt-1">Try another department tab or clear your search.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            grid.innerHTML = filtered.map((item) => {
+                const badge = getBadgeLabel(item);
+                const fallbackImg = "https://placehold.co/600x400/064e3b/ffffff?text=Powerstar+Item";
+                return `
+                    <article class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                        <div>
+                            <div class="relative h-44 bg-slate-100 overflow-hidden">
+                                <img src="${item.img}" alt="${item.name}" onerror="this.onerror=null;this.src='${fallbackImg}';" class="w-full h-full object-cover">
+                                <span class="absolute top-3 left-3 px-2.5 py-1 rounded-lg bg-amber-400 text-slate-950 text-[11px] font-extrabold shadow-xs">${badge}</span>
+                            </div>
+                            <div class="p-4">
+                                <div class="text-[11px] font-bold uppercase tracking-wider text-emerald-700">${item.category}</div>
+                                <h3 class="font-display font-bold text-base text-slate-900 mt-0.5">${item.name}</h3>
+                                <p class="text-xs text-slate-500 mt-1 line-clamp-2">${item.note}</p>
+                            </div>
+                        </div>
+                        <div class="px-4 pb-4 pt-2 flex items-center justify-between gap-2 border-t border-slate-100">
+                            <div>
+                                <span class="font-display font-extrabold text-base text-emerald-900">KES ${Number(item.price).toLocaleString()}</span>
+                                ${item.oldPrice ? `<span class="text-xs text-slate-400 line-through ml-1.5">KES ${Number(item.oldPrice).toLocaleString()}</span>` : ""}
+                            </div>
+                            <button type="button" onclick="addToCart(${item.id})" class="px-3 py-2 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-extrabold transition flex items-center gap-1">
+                                <i class="fa-solid fa-cart-plus text-amber-300"></i>
+                                <span>Add</span>
+                            </button>
+                        </div>
+                    </article>
+                `;
+            }).join("");
+        }
+
+        document.querySelectorAll(".dept-tab[data-tab]").forEach((btn) => {
+            btn.addEventListener("click", () => {
+                activeTab = btn.dataset.tab;
+                document.querySelectorAll(".dept-tab[data-tab]").forEach((b) => {
+                    b.classList.remove("bg-emerald-700", "text-white", "shadow-sm");
+                    b.classList.add("bg-slate-100", "text-slate-700");
+                });
+                btn.classList.remove("bg-slate-100", "text-slate-700");
+                btn.classList.add("bg-emerald-700", "text-white", "shadow-sm");
+                renderProducts();
+            });
+        });
+
+        document.getElementById("productSearchInput").addEventListener("input", renderProducts);
+
+        function addToCart(id) {
+            const product = products.find((p) => p.id === id);
+            if (!product) return;
+            const existing = cart.find((c) => c.id === id);
+            if (existing) {
+                existing.qty += 1;
+            } else {
+                cart.push({ id: product.id, name: product.name, price: product.price, qty: 1 });
+            }
+            saveToStorage(STORAGE_KEYS.cart, cart);
+            renderCart();
+            if (isAdminAuthenticated) renderAdminDashboard();
+            showToast(`Added "${product.name}" to your shopping list.`);
+        }
+
+        function changeCartQty(id, delta) {
+            const item = cart.find((c) => c.id === id);
+            if (!item) return;
+            item.qty += delta;
+            if (item.qty <= 0) {
+                cart = cart.filter((c) => c.id !== id);
+            }
+            saveToStorage(STORAGE_KEYS.cart, cart);
+            renderCart();
+            if (isAdminAuthenticated) renderAdminDashboard();
+        }
+
+        function clearShoppingCart() {
+            cart = [];
+            saveToStorage(STORAGE_KEYS.cart, cart);
+            renderCart();
+            if (isAdminAuthenticated) renderAdminDashboard();
+            showToast("Shopping list cleared.");
+        }
+
+        function renderCart() {
+            const badge = document.getElementById("listBadge");
+            const container = document.getElementById("cartItemsContainer");
+            const totalText = document.getElementById("cartTotalText");
+
+            const totalQty = cart.reduce((sum, i) => sum + i.qty, 0);
+            const totalKes = cart.reduce((sum, i) => sum + i.price * i.qty, 0);
+
+            badge.textContent = totalQty;
+            totalText.textContent = `KES ${totalKes.toLocaleString()}`;
+
+            if (cart.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center py-12 text-slate-400">
+                        <i class="fa-solid fa-basket-shopping text-3xl mb-2"></i>
+                        <p class="text-sm font-semibold text-slate-600">Your shopping list is empty</p>
+                        <p class="text-xs mt-1">Add weekly offers from the catalog to estimate your total.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            container.innerHTML = cart.map((item) => `
+                <div class="flex items-center justify-between gap-3 p-3.5 rounded-2xl bg-slate-50 border border-slate-200">
+                    <div>
+                        <div class="text-sm font-bold text-slate-900">${item.name}</div>
+                        <div class="text-xs font-semibold text-emerald-800">KES ${(item.price * item.qty).toLocaleString()}</div>
+                    </div>
+                    <div class="flex items-center gap-1.5">
+                        <button type="button" onclick="changeCartQty(${item.id}, -1)" class="w-7 h-7 rounded-lg bg-white border border-slate-300 font-bold text-xs hover:bg-slate-100">-</button>
+                        <span class="w-6 text-center text-xs font-extrabold">${item.qty}</span>
+                        <button type="button" onclick="changeCartQty(${item.id}, 1)" class="w-7 h-7 rounded-lg bg-white border border-slate-300 font-bold text-xs hover:bg-slate-100">+</button>
+                    </div>
+                </div>
+            `).join("");
+        }
+
+        const cartDrawer = document.getElementById("cartDrawer");
+        const cartBackdrop = document.getElementById("cartBackdrop");
+
+        function openCartDrawer() {
+            cartDrawer.classList.remove("hidden");
+            cartBackdrop.classList.remove("hidden");
+        }
+
+        function closeCartDrawer() {
+            cartDrawer.classList.add("hidden");
+            cartBackdrop.classList.add("hidden");
+        }
+
+        document.getElementById("openListBtn").addEventListener("click", openCartDrawer);
+        document.getElementById("closeListBtn").addEventListener("click", closeCartDrawer);
+        cartBackdrop.addEventListener("click", closeCartDrawer);
+
+        // Customer message request form saves directly to localStorage for the Admin Message Requests tab
+        function openFeedbackModal(title) {
+            document.getElementById("feedbackModalTitle").textContent = title;
+            document.getElementById("feedbackModal").classList.remove("hidden");
+        }
+
+        function closeFeedbackModal() {
+            document.getElementById("feedbackModal").classList.add("hidden");
+            document.getElementById("feedbackForm").reset();
+        }
+
+        document.getElementById("feedbackForm").addEventListener("submit", (e) => {
+            e.preventDefault();
+            const topic = document.getElementById("feedbackModalTitle").textContent || "Message Request";
+            const senderName = document.getElementById("feedbackName").value.trim();
+            const contact = document.getElementById("feedbackContact").value.trim();
+            const text = document.getElementById("feedbackMessage").value.trim();
+
+            messages = loadFromStorage(STORAGE_KEYS.messages, []);
+            messages.unshift({
+                id: Date.now(),
+                topic,
+                senderName,
+                contact,
+                text,
+                read: false,
+                createdAt: new Date().toLocaleString()
+            });
+            saveToStorage(STORAGE_KEYS.messages, messages);
+
+            closeFeedbackModal();
+            if (isAdminAuthenticated) renderAdminDashboard();
+            showToast("Message request sent to Annex Mwiki Admin Inbox!");
+        });
+
+        function shareStorePromo(title) {
+            const url = window.location.href;
+            if (navigator.share) {
+                navigator.share({ title, text: "Check out Powerstar Supermarket - Annex Mwiki weekly offers!", url }).catch(() => {});
+            } else if (navigator.clipboard) {
+                navigator.clipboard.writeText(url).then(() => showToast("Store link copied to clipboard!"));
+            } else {
+                showToast(url);
+            }
+        }
+
+        document.getElementById("mobileMenuBtn").addEventListener("click", () => {
+            document.getElementById("mobileMenu").classList.toggle("hidden");
+        });
+
+        function closeMobileMenu() {
+            document.getElementById("mobileMenu").classList.add("hidden");
+        }
+
+        // Cross-tab synchronization
+        window.addEventListener("storage", () => {
+            products = loadFromStorage(STORAGE_KEYS.products, DEFAULT_PRODUCTS);
+            media = { ...DEFAULT_MEDIA, ...loadFromStorage(STORAGE_KEYS.media, DEFAULT_MEDIA) };
+            cart = loadFromStorage(STORAGE_KEYS.cart, []);
+            messages = loadFromStorage(STORAGE_KEYS.messages, []);
+            settings = { ...DEFAULT_SETTINGS, ...loadFromStorage(STORAGE_KEYS.settings, DEFAULT_SETTINGS) };
+            applyMediaAndSettings();
+            renderProducts();
+            renderCart();
+            if (isAdminAuthenticated) renderAdminDashboard();
+        });
+
+        updateAdminHeaderBadge();
+        applyMediaAndSettings();
+        renderProducts();
+        renderCart();
+    </script>
+</body>
+</html>
